@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {% block title %}
+            Мой сайт
+        {% endblock %}
+    </title>
+</head>
+<body>
+    <div>
+        <head >
+            <div>Шапка</div>
+            <a href="cloth.html">Одежда</a>
+            <a href="shoes.html">Обувь</a>
+            <a href="jacket.html">Куртка</a>
+        </head>
+        
+        {% block content %}
+            <br>Страница не заполненна
+        {% endblock %}
+
+        <footer>
+            <p>Все права защищены</p>
+        </footer>
+    </div>
+</body>
+</html>
